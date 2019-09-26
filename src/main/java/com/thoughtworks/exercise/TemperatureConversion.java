@@ -9,6 +9,7 @@ public class TemperatureConversion {
     }
 
     public double convert() {
+        fahrenheit = celsius * 9/5 + fahrenheit;
         return fahrenheit;
     }
 }

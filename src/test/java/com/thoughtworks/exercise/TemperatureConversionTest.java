@@ -11,4 +11,11 @@ public class TemperatureConversionTest {
 
         Assertions.assertEquals(32, converter.convert());
     }
+
+    @Test
+    void givenOneCelsiusTemperature_WhenPerformConversionToFahrenheit_ThenShouldReturnThirtyThreeDotEight(){
+        TemperatureConversion converter = new TemperatureConversion(1);
+
+        Assertions.assertEquals(33.8, converter.convert());
+    }
 }
