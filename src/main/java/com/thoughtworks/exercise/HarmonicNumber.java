@@ -8,8 +8,9 @@ public class HarmonicNumber {
         this.number = number;
     }
 
-
     public double calculate() {
-        return 0;
+        double result = 1;
+
+        return result*number;
     }
 }

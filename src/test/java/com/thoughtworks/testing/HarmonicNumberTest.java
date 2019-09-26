@@ -12,4 +12,12 @@ public class HarmonicNumberTest {
 
         Assertions.assertEquals(0, harmonicNumber.calculate());
     }
+
+    @Test
+    void givenOneNumber_WhenCalculateHarmonicNumber_ThenShouldReturnOne(){
+        HarmonicNumber harmonicNumber = new HarmonicNumber(1);
+
+        Assertions.assertEquals(1, harmonicNumber.calculate());
+    }
+
 }
