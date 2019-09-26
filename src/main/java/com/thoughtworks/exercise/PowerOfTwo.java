@@ -1,4 +1,4 @@
-package com.thoughtworks.testing;
+package com.thoughtworks.exercise;
 
 public class PowerOfTwo {
     private int power;
