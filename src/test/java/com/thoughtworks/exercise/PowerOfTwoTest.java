@@ -1,6 +1,5 @@
-package com.thoughtworks.testing;
+package com.thoughtworks.exercise;
 
-import com.thoughtworks.exercise.PowerOfTwo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

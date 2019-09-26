@@ -1,6 +1,5 @@
-package com.thoughtworks.testing;
+package com.thoughtworks.exercise;
 
-import com.thoughtworks.exercise.HarmonicNumber;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -26,4 +25,18 @@ public class HarmonicNumberTest {
 
         Assertions.assertEquals(1.5, harmonicNumber.calculate());
     }
+
+    @Test
+    void givenThreeNumber_WhenCalculateHarmonicNumber_ThenShouldReturnOneDotEight(){
+        HarmonicNumber harmonicNumber = new HarmonicNumber(3);
+
+        Assertions.assertEquals(1.8333333333333333, harmonicNumber.calculate());
+    }
+    @Test
+    void givenFourNumber_WhenCalculateHarmonicNumber_ThenShouldReturnTwoDotZeroEight(){
+        HarmonicNumber harmonicNumber = new HarmonicNumber(4);
+
+        Assertions.assertEquals(2.083333333333333, harmonicNumber.calculate());
+    }
+
 }
