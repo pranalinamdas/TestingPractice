@@ -8,11 +8,16 @@ public class PowerOfTwo {
     }
 
     public int powerOfTwo() {
+        int result = 1;
 
-        if (power == 0) {
-            return 1;
+        if (this.power > 0) {
+            for (int i = 1; i <= this.power; i++) {
+                result *= 2;
+            }
+            return result;
         }
-        return 2 * power;
+
+        return result;
     }
 
 }
