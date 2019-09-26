@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 public class TemperatureConversionTest {
 
     @Test
-    void givenZeroCelsiusTemperature_WhenPerformConversionToFahrenheit_ThenShouldReturnZero(){
+    void givenZeroCelsiusTemperature_WhenPerformConversionToFahrenheit_ThenShouldReturnThirtyTwo(){
         TemperatureConversion converter = new TemperatureConversion(0);
 
-        Assertions.assertEquals(0, converter.convert());
+        Assertions.assertEquals(32, converter.convert());
     }
 }
