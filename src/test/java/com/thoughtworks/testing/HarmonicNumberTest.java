@@ -20,4 +20,10 @@ public class HarmonicNumberTest {
         Assertions.assertEquals(1, harmonicNumber.calculate());
     }
 
+    @Test
+    void givenTwoNumber_WhenCalculateHarmonicNumber_ThenShouldReturnOneDotFive(){
+        HarmonicNumber harmonicNumber = new HarmonicNumber(2);
+
+        Assertions.assertEquals(1.5, harmonicNumber.calculate());
+    }
 }
