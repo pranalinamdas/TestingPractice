@@ -1,13 +1,19 @@
 package com.thoughtworks.testing;
 
 public class PowerOfTwo {
-    private final int power;
+    private int power;
 
-    public PowerOfTwo(int power){
+    public PowerOfTwo(int power) {
         this.power = power;
     }
 
     public int powerOfTwo() {
-        return 1;
+
+        if (power == 0) {
+            return 1;
+        }
+
+        return 2 * power;
     }
+
 }

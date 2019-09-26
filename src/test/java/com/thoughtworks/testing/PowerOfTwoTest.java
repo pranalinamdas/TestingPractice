@@ -11,4 +11,9 @@ public class PowerOfTwoTest {
         Assertions.assertEquals(1, calculate.powerOfTwo());
     }
 
+    @Test
+    void givenOnePowerOfTwo_WhenCalculate_ThenShouldReturnTwo(){
+        PowerOfTwo calculate = new PowerOfTwo(1);
+        Assertions.assertEquals(2, calculate.powerOfTwo());
+    }
 }
