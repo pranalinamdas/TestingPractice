@@ -7,13 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class QuantityMeasurementTest {
 
     @Test
-    void givenZeroFeetAndZeroInch_WhenCompare_ThenShouldReturnTrue() {
+    void givenZerAndZeroFoot_WhenCompare_ThenTheyShouldBeEqual() {
+        QuantityMeasurement zero = new QuantityMeasurement(0, Unit.feet);
 
-        QuantityMeasurement feet = new QuantityMeasurement(0);
-
-        QuantityMeasurement inche = new QuantityMeasurement(0);
-
-        assertTrue(feet.compare(inche));
+        assertTrue(zero.compare(zero));
     }
-
 }
