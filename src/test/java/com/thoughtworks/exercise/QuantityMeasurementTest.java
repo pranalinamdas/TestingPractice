@@ -9,8 +9,11 @@ public class QuantityMeasurementTest {
     @Test
     void givenZeroFeetAndZeroInch_WhenCompare_ThenShouldReturnTrue() {
 
-        QuantityMeasurement quantityMeasurement = new QuantityMeasurement(0, 0);
+        QuantityMeasurement feet = new QuantityMeasurement(0);
 
-        assertTrue(quantityMeasurement.compare());
+        QuantityMeasurement inche = new QuantityMeasurement(0);
+
+        assertTrue(feet.compare(inche));
     }
+
 }

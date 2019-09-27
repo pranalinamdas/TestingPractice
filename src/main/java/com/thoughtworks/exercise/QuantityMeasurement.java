@@ -2,15 +2,13 @@ package com.thoughtworks.exercise;
 
 public class QuantityMeasurement {
 
-    private int feet;
-    private int inch;
+    private int quantity;
 
-    public QuantityMeasurement(int feet, int inch) {
-        this.feet = feet;
-        this.inch = inch;
+    public QuantityMeasurement(int quantity) {
+        this.quantity = quantity;
     }
 
-    public boolean compare() {
+    public boolean compare(QuantityMeasurement quantity) {
         return true;
     }
 }
