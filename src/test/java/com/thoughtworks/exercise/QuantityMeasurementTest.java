@@ -2,7 +2,7 @@ package com.thoughtworks.exercise;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class QuantityMeasurementTest {
 
@@ -12,4 +12,14 @@ public class QuantityMeasurementTest {
 
         assertTrue(zero.compare(zero));
     }
+
+    @Test
+    void givenZeroAndOneFoot_WhenCompare_ThenTheyShouldNotBeEqual() {
+
+        QuantityMeasurement zero = new QuantityMeasurement(0, Unit.feet);
+        QuantityMeasurement one = new QuantityMeasurement(1,Unit.feet);
+
+        assertFalse(zero.compare(one));
+    }
+
 }
