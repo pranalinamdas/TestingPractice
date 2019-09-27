@@ -2,15 +2,15 @@ package com.thoughtworks.exercise;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class QuantityMeasurementTest {
 
     @Test
-    void givenZeroFeetAndZeroInch_WhenCompareWithInches_ThenShouldReturnZero(){
+    void givenZeroFeetAndZeroInch_WhenCompare_ThenShouldReturnTrue() {
 
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement(0, 0);
 
-        assertEquals(0, quantityMeasurement.compare());
+        assertTrue(quantityMeasurement.compare());
     }
 }

@@ -1,7 +1,5 @@
 package com.thoughtworks.exercise;
 
-import javax.swing.*;
-
 public class QuantityMeasurement {
 
     private int feet;
@@ -12,7 +10,7 @@ public class QuantityMeasurement {
         this.inch = inch;
     }
 
-    public int compare() {
-        return 0;
+    public boolean compare() {
+        return true;
     }
 }
